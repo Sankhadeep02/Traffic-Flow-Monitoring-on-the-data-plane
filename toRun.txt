@@ -1,0 +1,6 @@
+sudo p4run
+
+sudo /home/p4/src/p4dev-python-venv/bin/python3 controller.py
+
+
+mininet> h1 ping h2 -c 100

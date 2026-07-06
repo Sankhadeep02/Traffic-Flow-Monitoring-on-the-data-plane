@@ -1,0 +1,4 @@
+Method,Control_Bytes,CP_Crossings,Latency_ms
+Traditional Polling,819200,4096,3000
+Crawler Packet,100,2,500
+Meter+Digest,400,8,13

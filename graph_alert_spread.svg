@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="380">
+<rect width="700" height="380" fill="white"/>
+<text x="350" y="35" text-anchor="middle" font-size="15" font-weight="bold" font-family="Arial">Alert Arrival at Controller (Real Data)</text>
+<text x="15" y="180" text-anchor="middle" font-size="11" font-family="Arial" transform="rotate(-90,15,180)">Time since first alert (ms)</text>
+<text x="375" y="370" text-anchor="middle" font-size="11" font-family="Arial">Alert Sequence Number</text>
+<line x1="80" y1="300" x2="670" y2="300" stroke="#ddd" stroke-width="1"/>
+<text x="75" y="304" text-anchor="end" font-size="10" font-family="Arial">0</text>
+<line x1="80" y1="270" x2="670" y2="270" stroke="#ddd" stroke-width="1"/>
+<text x="75" y="274" text-anchor="end" font-size="10" font-family="Arial">2</text>
+<line x1="80" y1="240" x2="670" y2="240" stroke="#ddd" stroke-width="1"/>
+<text x="75" y="244" text-anchor="end" font-size="10" font-family="Arial">4</text>
+<line x1="80" y1="210" x2="670" y2="210" stroke="#ddd" stroke-width="1"/>
+<text x="75" y="214" text-anchor="end" font-size="10" font-family="Arial">6</text>
+<line x1="80" y1="180" x2="670" y2="180" stroke="#ddd" stroke-width="1"/>
+<text x="75" y="184" text-anchor="end" font-size="10" font-family="Arial">8</text>
+<line x1="80" y1="150" x2="670" y2="150" stroke="#ddd" stroke-width="1"/>
+<text x="75" y="154" text-anchor="end" font-size="10" font-family="Arial">10</text>
+<line x1="80" y1="120" x2="670" y2="120" stroke="#ddd" stroke-width="1"/>
+<text x="75" y="124" text-anchor="end" font-size="10" font-family="Arial">12</text>
+<line x1="80" y1="90" x2="670" y2="90" stroke="#ddd" stroke-width="1"/>
+<text x="75" y="94" text-anchor="end" font-size="10" font-family="Arial">14</text>
+<line x1="80" y1="60" x2="670" y2="60" stroke="#ddd" stroke-width="1"/>
+<text x="75" y="64" text-anchor="end" font-size="10" font-family="Arial">16</text>
+<line x1="80" y1="60" x2="80" y2="300" stroke="#333" stroke-width="2"/>
+<line x1="80" y1="300" x2="670" y2="300" stroke="#333" stroke-width="2"/>
+<line x1="80" y1="108" x2="670" y2="108" stroke="red" stroke-width="1" stroke-dasharray="6,3" opacity="0.5"/>
+<text x="665" y="104" text-anchor="end" font-size="10" fill="red" font-family="Arial">Max=12.8ms</text>
+<polygon points="80,300 80,300 164,245 248,221 332,194 417,174 501,168 585,161 670,108 670,300" fill="#00CC96" opacity="0.15"/>
+<polyline points="80,300 164,245 248,221 332,194 417,174 501,168 585,161 670,108" fill="none" stroke="#00CC96" stroke-width="2.5"/>
+<circle cx="80" cy="300" r="6" fill="white" stroke="#00CC96" stroke-width="2.5"/>
+<text x="80" y="290" text-anchor="middle" font-size="10" font-family="Arial" fill="#333">s1→fwd</text>
+<circle cx="164" cy="245" r="6" fill="white" stroke="#00CC96" stroke-width="2.5"/>
+<text x="164" y="235" text-anchor="middle" font-size="10" font-family="Arial" fill="#333">s2→fwd</text>
+<circle cx="248" cy="221" r="6" fill="white" stroke="#00CC96" stroke-width="2.5"/>
+<text x="248" y="211" text-anchor="middle" font-size="10" font-family="Arial" fill="#333">s4→fwd</text>
+<circle cx="332" cy="194" r="6" fill="white" stroke="#00CC96" stroke-width="2.5"/>
+<text x="332" y="184" text-anchor="middle" font-size="10" font-family="Arial" fill="#333">s3→fwd</text>
+<circle cx="417" cy="174" r="6" fill="white" stroke="#00CC96" stroke-width="2.5"/>
+<text x="417" y="164" text-anchor="middle" font-size="10" font-family="Arial" fill="#333">s4→rev</text>
+<circle cx="501" cy="168" r="6" fill="white" stroke="#00CC96" stroke-width="2.5"/>
+<text x="501" y="158" text-anchor="middle" font-size="10" font-family="Arial" fill="#333">s2→rev</text>
+<circle cx="585" cy="161" r="6" fill="white" stroke="#00CC96" stroke-width="2.5"/>
+<text x="585" y="151" text-anchor="middle" font-size="10" font-family="Arial" fill="#333">s1→rev</text>
+<circle cx="670" cy="108" r="6" fill="white" stroke="#00CC96" stroke-width="2.5"/>
+<text x="670" y="98" text-anchor="middle" font-size="10" font-family="Arial" fill="#333">s3→rev</text>
+<text x="80" y="316" text-anchor="middle" font-size="10" font-family="Arial">1</text>
+<text x="164" y="316" text-anchor="middle" font-size="10" font-family="Arial">2</text>
+<text x="248" y="316" text-anchor="middle" font-size="10" font-family="Arial">3</text>
+<text x="332" y="316" text-anchor="middle" font-size="10" font-family="Arial">4</text>
+<text x="417" y="316" text-anchor="middle" font-size="10" font-family="Arial">5</text>
+<text x="501" y="316" text-anchor="middle" font-size="10" font-family="Arial">6</text>
+<text x="585" y="316" text-anchor="middle" font-size="10" font-family="Arial">7</text>
+<text x="670" y="316" text-anchor="middle" font-size="10" font-family="Arial">8</text>
+</svg>

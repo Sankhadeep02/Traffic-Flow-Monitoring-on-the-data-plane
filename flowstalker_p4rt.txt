@@ -1,0 +1,230 @@
+# proto-file: p4/config/v1/p4info.proto
+# proto-message: p4.config.v1.P4Info
+
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 35310352
+    name: "MyIngress.forward_table"
+    alias: "forward_table"
+  }
+  match_fields {
+    id: 1
+    name: "standard_metadata.ingress_port"
+    bitwidth: 9
+    match_type: EXACT
+  }
+  action_refs {
+    id: 25797781
+  }
+  action_refs {
+    id: 32003175
+  }
+  action_refs {
+    id: 21257015
+  }
+  initial_default_action {
+    action_id: 21257015
+  }
+  size: 8
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 25797781
+    name: "MyIngress.set_egress"
+    alias: "set_egress"
+  }
+  params {
+    id: 1
+    name: "port"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 32003175
+    name: "MyIngress.drop_packet"
+    alias: "drop_packet"
+  }
+}
+counters {
+  preamble {
+    id: 318731500
+    name: "MyIngress.port_counter"
+    alias: "port_counter"
+  }
+  spec {
+    unit: BOTH
+  }
+  size: 256
+}
+meters {
+  preamble {
+    id: 340166832
+    name: "MyIngress.flow_meter"
+    alias: "flow_meter"
+  }
+  spec {
+    unit: PACKETS
+  }
+  size: 1024
+}
+registers {
+  preamble {
+    id: 380978040
+    name: "MyIngress.pkt_count"
+    alias: "pkt_count"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 1024
+}
+registers {
+  preamble {
+    id: 378510162
+    name: "MyIngress.byte_count"
+    alias: "byte_count"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 1024
+}
+registers {
+  preamble {
+    id: 372400700
+    name: "MyIngress.base_timestamp"
+    alias: "base_timestamp"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 48
+      }
+    }
+  }
+  size: 1024
+}
+registers {
+  preamble {
+    id: 385143132
+    name: "MyIngress.alert_sent"
+    alias: "alert_sent"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 1
+      }
+    }
+  }
+  size: 1024
+}
+digests {
+  preamble {
+    id: 402234766
+    name: "flow_alert_t"
+    alias: "flow_alert_t"
+  }
+  type_spec {
+    struct {
+      name: "flow_alert_t"
+    }
+  }
+}
+type_info {
+  structs {
+    key: "flow_alert_t"
+    value {
+      members {
+        name: "src_ip"
+        type_spec {
+          bitstring {
+            bit {
+              bitwidth: 32
+            }
+          }
+        }
+      }
+      members {
+        name: "dst_ip"
+        type_spec {
+          bitstring {
+            bit {
+              bitwidth: 32
+            }
+          }
+        }
+      }
+      members {
+        name: "pkt_count"
+        type_spec {
+          bitstring {
+            bit {
+              bitwidth: 32
+            }
+          }
+        }
+      }
+      members {
+        name: "byte_count"
+        type_spec {
+          bitstring {
+            bit {
+              bitwidth: 32
+            }
+          }
+        }
+      }
+      members {
+        name: "timestamp"
+        type_spec {
+          bitstring {
+            bit {
+              bitwidth: 48
+            }
+          }
+        }
+      }
+      members {
+        name: "ingress_port"
+        type_spec {
+          bitstring {
+            bit {
+              bitwidth: 9
+            }
+          }
+        }
+      }
+      members {
+        name: "padding"
+        type_spec {
+          bitstring {
+            bit {
+              bitwidth: 7
+            }
+          }
+        }
+      }
+    }
+  }
+}
