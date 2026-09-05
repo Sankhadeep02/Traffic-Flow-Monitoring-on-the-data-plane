@@ -57,6 +57,3 @@ python3 plot_results.py
 
 ## Tech stack
 `P4_16` `BMv2` `Mininet` `Python` `P4Runtime`
-
-## Status
-Built as part of ongoing coursework/research into data-plane programmability at NIT Warangal.
